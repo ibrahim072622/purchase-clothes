@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-30T20:13:34.780Z",
+        "line": 4,
+        "name": "Validate the product added to wishlist and cart",
+        "description": "",
+        "id": "products-wishlist;validate-the-product-added-to-wishlist-and-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13913209900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I add four different products to my wish list",
+            "match": {
+              "location": "com.product.test.stepdef.ProductsTestDefinition.productSelect()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 449807600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I view my wishlist table",
+            "match": {
+              "location": "com.product.test.stepdef.ProductsTestDefinition.iViewMyWishlistTable()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30916900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find total 4 selected items in my Wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 13
+                }
+              ],
+              "location": "com.product.test.stepdef.ProductsTestDefinition.iFindTotalFourSelectedItemsInMyWishlist(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208224700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for lowest price product",
+            "match": {
+              "location": "com.product.test.stepdef.ProductsTestDefinition.iSearchForLowestPriceProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95762300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am able to add the lowest price item to my cart",
+            "match": {
+              "location": "com.product.test.stepdef.ProductsTestDefinition.iAmAbleToAddTheLowestPriceItemToMyCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1485663400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am able to verify the item in my cart",
+            "match": {
+              "location": "com.product.test.stepdef.ProductsTestDefinition.iAmAbleToVerifyTheItemInMyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Products"
+          }
+        ]
+      }
+    ],
+    "name": "Products Wishlist",
+    "description": "",
+    "id": "products-wishlist",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/products.feature",
+    "tags": [
+      {
+        "name": "@Products",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

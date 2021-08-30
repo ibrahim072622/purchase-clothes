@@ -1,0 +1,4 @@
+pages\BaseStep.class
+pages\DemoShop.class
+utils\PurchaseProducts.class
+testcontext\TestContext.class
